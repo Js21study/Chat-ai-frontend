@@ -3,12 +3,14 @@ import { CTASection } from "./components/CTASection";
 import { Features } from "./components/Features";
 import { HeroSection } from "./components/HeroSection";
 import { Navigation } from "./components/Navigation";
+import { AboutSection } from "./components/AboutSection";
 
 export default function Homepage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-100 via-blue-50 to-gray-100">
       <Navigation />
       <HeroSection />
+      <AboutSection />
       <Features />
       <CTASection />
       <Footer />

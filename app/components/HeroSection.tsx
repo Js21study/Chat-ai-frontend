@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 export const HeroSection = () => {
@@ -30,12 +31,12 @@ export const HeroSection = () => {
             style={{ animationDelay: "0.2s" }}
           >
             <button className="group bg-blue-500 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-600 transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2">
-              <span>Start Chatting</span>
+            <Link href={"/chat"}>Start Chatting</Link>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
-            <button className="glass text-gray-800 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white/90 transition-all duration-300 transform hover:scale-105 border border-blue-200">
+            <a href="#about" className="glass text-gray-800 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white/90 transition-all duration-300 transform hover:scale-105 border border-blue-200">
               Learn More
-            </button>
+            </a>
           </div>
 
           <div
