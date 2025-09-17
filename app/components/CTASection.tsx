@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export const CTASection = () => {
   return (
@@ -13,7 +14,7 @@ export const CTASection = () => {
           intelligent AI conversations.
         </p>
         <button className="bg-blue-500 text-white px-12 py-4 rounded-lg text-xl font-semibold hover:bg-blue-600 transition-all duration-300 transform hover:scale-105 inline-flex items-center space-x-2 shadow-lg">
-          <span>Start Chatting Now</span>
+          <Link href={"/chat"}>Start Chatting Now</Link>
           <ArrowRight className="w-6 h-6" />
         </button>
       </div>

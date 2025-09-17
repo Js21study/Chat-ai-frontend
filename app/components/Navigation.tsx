@@ -1,5 +1,6 @@
 "use client";
 import { Menu, MessageCircle, X } from "lucide-react";
+import Link from "next/link";
 import React, { useState } from "react";
 
 export const Navigation = () => {
@@ -36,9 +37,12 @@ export const Navigation = () => {
             >
               Contact
             </a>
-            <button className="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-all duration-300 transform hover:scale-105 font-medium">
+            <Link
+              href={"/chat"}
+              className="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-all duration-300 transform hover:scale-105 font-medium"
+            >
               Get Started
-            </button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -77,9 +81,14 @@ export const Navigation = () => {
             >
               Contact
             </a>
-            <button className="w-full bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-all duration-300 font-medium">
+
+            <Link
+              href={"/chat"}
+              className="w-full bg-blue-500 text-white px-6 py-2 rounded-lg
+              hover:bg-blue-600 transition-all duration-300 font-medium"
+            >
               Get Started
-            </button>
+            </Link>
           </div>
         </div>
       )}

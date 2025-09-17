@@ -13,7 +13,7 @@ export const Footer = () => {
             <span className="text-xl font-bold text-gray-800">ChatAI</span>
           </div>
 
-          <div className="flex space-x-6">
+          <div className="flex space-x-6" id="contact">
             <a
               href="#"
               className="text-gray-500 hover:text-gray-700 transition-colors"
